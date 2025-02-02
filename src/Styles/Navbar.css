@@ -1,0 +1,150 @@
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10rem;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left:50px;
+}
+
+.Navbar div{
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+    align-items: center;
+}
+
+.Navbar input:first-child {
+    width: 150px;
+    padding: 8px;
+    border: 2px solid #6c63ff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Navbar input:last-child{
+    width:130px;
+    padding:10px;
+    border: 2px solid #6c63ff;
+    border-radius:5px ;
+    font-size:14 ;
+
+}
+.ul {
+    
+    display: flex;
+    justify-content:'Space-between' ;
+    flex-direction: 'row';
+background-color: rgb(62, 62, 252)
+
+}
+.nav-container{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(45, 45, 128);
+    padding:15px 40px;
+    color:white;
+    font-family: arial,sans-serif;
+
+}
+.nav-left{
+    flex:1;
+}
+.trending-categories{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.down-arrow{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.center{
+    flex:2;
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    list-style: none;
+    
+
+}
+.center li{
+    color:white;
+}
+
+
+
+.center:hover{
+    text-decoration: underline;
+}
+.nav-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.icon-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    color: black;
+    
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.phone-number{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+.phone-icon{
+    font-size: 16px;
+    gap: 5px;
+    align-items: center;
+    width: 4e0px;
+    height: 40px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+.products{
+    margin-left: 10px;
+    height: auto;
+}
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: arial,sans-serif;
+    margin-left:none;
+
+}
+.sidebar{
+    width: 250px;
+    padding-right: 30px;
+
+}
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-list li{
+    margin-bottom: 15px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 8px 0;
+}
+.banner{
+    flex: 1;
+    padding: 40px;
+}
+.banner-content{
+    max-width: 600px;
+}
+.banner-content h1{
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color:  #333;
+    font-weight: bold;
+}
+.shop-now{
+    background-color:#6B7280;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.shop-now:hover{
+    background-color:#4B5563;
+}
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .banner{
+        padding: 20px;
+    }
+}
+.banner-content h1{
+    font-size: 32px;
+}
+.categories{
+    display: flex;
+}
+.Image-first{
+    width: auto;
+    max-width:15%;
+    height: auto;
+    display: flex;
+
+}
+.container1{
+    display: flex;
+    text-align: left;
+}
+.Image-second{
+    display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+.paragraph{
+
+}
+.price{
+    margin-top: 5px;
+}
+
+    .stars {
+    color: chocolate;
+}
+.shop-now1{
+    text-align: center;
+    margin-top: 10px;
+    background-color:#6B7280;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+} 
+
+.list{
+    display: flex;
+    text-align: left;
+    
+}
+.Image-third{
+    display: flex;
+    gap: 20px;
+}
+.one{
+    display:block;
+}
+.one img{
+    width: 400px;
+}
+.santa{
+    text-align: left;
+    font-weight: bold;
+    height: 20px;
+    font-size: 20px;
+}
+.new {
+text-align: left;
+}
+
+.josh{
+    font-weight: bold;
+    font-size: 20px;
+}
+.digital{
+    font-weight: bold;
+    font-size:20px;
+}
+.new {
+    text-align: left;
+}
+.new {
+    text-align:left;
+}
+.container2, .container3 {
+    text-align: left;
+}
+
+.image-fifth, .photoes, .image-sixth {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.description img{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.description {
+    /* text-align: center; */
+    /* font-weight: bold; */
+}
+
+.paragraph, .price, .stars {
+    margin-top: 5px;
+}
+
+.image-fifth img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.photoes img{
+width: auto;
+display: flex;
+max-width:30%;
+height: auto;
+
+
+}
+
+.image-sixth img  {
+    width: auto;
+    max-width:15%;
+    height: auto;
+    display: flex;
+}
+.Image-fourth{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* gap: 20px; */
+    justify-content: space-between;
+}
