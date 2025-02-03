@@ -1,124 +1,120 @@
-/* Footer Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General Footer Styling */
 .footer {
   background-color: #111;
   color: white;
-  padding: 50px 10%;
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Flex container */
+.footer-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-
-.newsletter {
-  flex: 1;
-  max-width: 500px;
-}
-
-.newsletter h2, .contact-info h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.newsletter p {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.newsletter input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: #222;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.newsletter button {
-  background: transparent;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
 .footer-links {
   display: flex;
-  flex: 2;
-  justify-content: space-around;
+  gap: 50px;
 }
 
-.column h3 {
+.footer-links h3 {
   font-size: 16px;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.column ul {
+.footer-links ul {
   list-style: none;
-  padding: 0;
 }
 
-.column ul li {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #ccc;
-}
-
-.contact-info {
-  flex: 1;
-  text-align: right;
-}
-
-.contact-info p {
+.footer-links ul li {
   font-size: 14px;
   margin: 5px 0;
-  color: #ccc;
 }
 
-.social-media {
+/* Newsletter Section */
+.newsletter {
+  max-width: 350px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscribe {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+  gap: 10px;
 }
 
-.social-media i {
-  font-size: 18px;
-  margin-left: 15px;
+.subscribe input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  background-color: darkgrey;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.payments {
+/* Contact Info Section */
+.contact-info1 {
+  text-align: left;
+  max-width: 350px;
+}
+
+.contact-info1 h2 {
+  font-size: 24px;
+}
+
+.contact-info1 p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Social Icons */
+.social-icons {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Payments */
+.payments {
   margin-top: 20px;
+}
+
+.payments h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .payments img {
-  max-width: 200px;
+  width: 100%;
+  max-width: 250px;
 }
 
-@media screen and (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-links, .contact-info, .social-media, .payments {
-    justify-content: center;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .social-media {
-    justify-content: center;
-    
-
-
-
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 }
