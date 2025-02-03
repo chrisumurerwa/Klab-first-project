@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.product-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .select {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .quick-view {
+    text-align: center;
+    bottom: 0;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Star Rating Styles */
+.stars {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 0px;
+  text-align: left;
+  display: flex;
+}
+
+.star {
+  color: silver; /* Default white */
+}
+
+.star.filled {
+  color: gold; /* Yellow for filled stars */
+}
+/* Color Circle Styles */
+.color-options {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+/* Define specific colors */
+.silver {
+  background-color: silver;
+}
+
+.Chamoisee {
+  background-color: rgb(203, 94, 15);
+}
+
+.white {
+  background-color: white;
+  border: 1px solid #aaa; /* White needs a border to be visible */
+}
+
+.Arsenic {
+  background-color: rgb(124, 122, 122);
+}
+  

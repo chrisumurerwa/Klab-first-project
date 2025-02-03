@@ -8,7 +8,7 @@ const  stores =[
         image: '/store1.jpg',
         location: "Central Park, New York, United States (US)",
         rating: 5,
-        icon: 'https://via.placeholder.com/50', // Replace with an icon
+        icon: 'https://demo.athemes.com/botiga-multi-vendor-el/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sites/145/2022/12/cropped-vendor-glass-shop-1-1.jpg.webp', // Replace with an icon
       },
       {
         id: 2,
@@ -16,7 +16,7 @@ const  stores =[
         image: "store2.jpg",
         location: 'Central Park, New York, United States (US)',
         rating: 4,
-        icon: 'https://via.placeholder.com/50',
+        icon: 'https://demo.athemes.com/botiga-multi-vendor-el/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sites/145/2022/12/cropped-vendor-shoes-shop-1-1.jpg.webp',
       },
       {
         id: 3,
@@ -24,7 +24,7 @@ const  stores =[
         image: "store3.jpg",
         location: 'Central Park, New York, United States (US)',
         rating: 4.5,
-        icon: 'https://via.placeholder.com/50',
+        icon: 'https://demo.athemes.com/botiga-multi-vendor-el/wp-content/uploads/sites/145/2022/12/cropped-vendor-shirt-shop-1.jpg',
       },
       
     ];
@@ -34,7 +34,7 @@ const store1=[{
     image: "store4.jpg",
     location: 'Central Park, New York, United States (US)',
     rating: 4.5,
-    icon: 'https://via.placeholder.com/50',
+    icon: 'https://demo.athemes.com/botiga-multi-vendor-el/wp-content/uploads/sites/145/2022/12/cropped-product-sound-box.jpg',
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const store1=[{
     image: "store5.jpg",
     location: "Central Park, New York, United States (US)",
     rating: 0, // No rating
-    icon: "https://via.placeholder.com/50",
+    icon: "https://demo.athemes.com/botiga-multi-vendor-el/wp-content/uploads/sites/145/2022/12/cropped-vendor-glass-shop-2.jpg",
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const store1=[{
     location: "Central Park, New York, United States (US)",
     rating: 5,
     phone: "123456789",
-    icon: "https://via.placeholder.com/50",
+    icon: "https://secure.gravatar.com/avatar/b09b39de21202fee022ada587cd6c12e?s=96&d=mm&r=g",
   },]
 const StoreList =()=>
     {
@@ -83,7 +83,7 @@ const StoreList =()=>
                   </div>
                 ))}
               </div>
-              <div className="store-list1">
+              <div className="store-list">
                 {store1.map((store) => (
                   <div key={store.id} className="store-card">
                     <img src={store.image} alt={store.name} className="store-image" />
