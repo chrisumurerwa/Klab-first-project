@@ -5,7 +5,7 @@ import image2 from '../assets/image14.jpg.webp';
 import { useNavigate } from 'react-router-dom';
 
 // Sample data array
-export const data = [
+export const productlist = [
     {
         id: 1,
         image: image1,
@@ -27,7 +27,7 @@ function Homepage() {
 
     return (
         <div className="nav-container">
-            {data.map((item) => (
+            {productlist.map((item) => (
                 <div className="cont" key={item.id}>
                     <div onClick={() => handleNavigate(item.id)} style={{ cursor: 'pointer' }}>
                         <div>

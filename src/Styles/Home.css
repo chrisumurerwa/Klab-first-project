@@ -2,65 +2,82 @@
     margin-left: 10px;
     height: auto;
 }
-.container{
+*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
     display: flex;
-    max-width: 5000px;
-    margin:5rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200x;
+    margin:10rem;
     padding: 20px;
-    font-family: arial,sans-serif;
-    margin-left:none;
+    text-align: left;
+    margin-top:3rem ;
+    margin-left: 5rem;
 
 }
-.sidebar{
-    width: 400px;
-    padding-right: 30px;
 
+.sidebar  ul {
+    width: 250px;
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    text-align: left;
 }
-.nav-list li{
+
+.nav-list li {
     margin-bottom: 15px;
 }
-.nav-list a{
+
+.nav-list a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-size: 18px;
     display: block;
-    padding: 8px 0;
+    padding: 5px 0;
 }
-.banner{
-    flex: 1;
-    padding: 40px;
+
+.banner {
+    flex-grow: 1;
+    text-align: center;
 }
-.banner-content{
-    max-width: 600px;
+
+.banner-content {
+    max-width: 500px;
+    margin: auto;
 }
-.banner-content h1{
-    font-size: 40px;
-    line-height: 1.2;
-    margin-bottom: 30px;
-    color:  #333;
+
+h1 {
+    font-size: 28px;
     font-weight: bold;
 }
-.shop-now{
-    background-color:#6B7280;
+
+.shop-now {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5d677a;
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-radius: 5px;
 }
-.shop-now:hover{
-    background-color:#4B5563;
+
+.shop-now:hover {
+    background-color: #4a5668;
 }
+
+
+
+
 @media (max-width:768px) {
     .container{
         flex-direction: column;

@@ -1,9 +1,14 @@
 import React from"react";
-function Singlepage ()
-    {
+import { useParams } from "react-router-dom";
+import { productlist } from "./HomePage";
+function Singlepage (){
+        const{id}=useParams();
+        console.log("product list",id);
+        const card=productlist.find((card)=>card.id==id);
         return(
             <div>
-                <p>Hello world</p>
+         <div><img src={card.image}/></div>
+         <div>{card.cardTitle}</div>
             </div>
         )
 }

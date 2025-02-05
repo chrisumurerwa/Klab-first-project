@@ -21,7 +21,7 @@ function Navbar() {
         <LoginForm handleForm={handleForm} isOpen={formOpen} />
 
         <div className="logo">Botiga</div>
-        <Link to='/View'><button>View</button></Link>
+        
 
         <div>
           <input type="text" placeholder="All Categories" />
@@ -39,6 +39,7 @@ function Navbar() {
               <GoHeart />
               <span className="icon-badge">1</span>
             </div>
+            <Link to='/View'><button>View</button></Link>
           </div>
         </div>
       </div>
