@@ -1,23 +1,57 @@
-
 .Navbar {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 10rem;
     background-color: #ffffff;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;}
-
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left:50px;
+    border-bottom: 2px solid #ddd;
 }
 
-.Navbar div{
-    display:flex;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px; /* Reduced gap for better spacing */
+    align-items: center; /* Ensures icons are aligned properly */
+    font-size: 24px; /* Adjust icon size */
+    position: relative;
+}
+
+.icons svg {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons svg:hover {
+    transform: scale(1.2);
+    color: gray;
+}
+
+.icon-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Navbar div {
+    display: flex;
     justify-content: space-between;
-    gap:50px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -29,71 +63,78 @@
     font-size: 14px;
 }
 
-.Navbar input:last-child{
-    width:130px;
-    padding:10px;
+.Navbar input:last-child {
+    width: 130px;
+    padding: 10px;
     border: 2px solid #6c63ff;
-    border-radius:5px ;
-    font-size:14 ;
-
+    border-radius: 5px;
+    font-size: 14px;
 }
+
 .ul {
-    
     display: flex;
-    justify-content:'Space-between' ;
-    flex-direction: 'row';
-background-color: rgb(62, 62, 252)
-
-}
-.nav-container{
-    
-    display:flex;
     justify-content: space-between;
-    align-items:center;
-    background-color: rgb(45, 45, 128);
-    padding:15px 40px;
-    color:white;
-    font-family: arial,sans-serif;
+    flex-direction: row;
+  background-color: white;
+}
 
-}
-.nav-left{
-    flex:1;
-}
-.trending-categories{
-    display:flex;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap:5px;
+    background-color: rgb(38, 33, 165);
+    padding: 15px 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.trending-categories {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     cursor: pointer;
     font-size: 16px;
 }
-.down-arrow{
+
+.down-arrow {
     font-size: 12px;
     margin-left: 5px;
 }
-.center{
-    flex:2;
-    display:flex;
+
+.center {
+    flex: 2;
+    display: flex;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
     list-style: none;
-    
-
-}
-.center li{
-    color:white;
 }
 
+/* Ensure links inside .center appear white */
+.center a {
+    color: white;
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
 
-
-.center:hover{
+/* Add underline effect on hover */
+.center a:hover {
     text-decoration: underline;
+    color: #ddd; /* Light gray for hover effect */
 }
-.nav-right{
+
+
+.nav-right {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-
 }
+
 .icon-container {
     display: flex;
     gap: 20px;
@@ -104,12 +145,13 @@ background-color: rgb(62, 62, 252)
     position: relative;
     cursor: pointer;
     color: black;
-    
 }
+
 .icon {
     width: 24px;
     height: 24px;
     color: black;
+    text-align:right ;
 }
 
 .notification-badge {
@@ -128,23 +170,19 @@ background-color: rgb(62, 62, 252)
     font-family: Arial, sans-serif;
 }
 
-.phone-number{
+.phone-number {
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 16px;
 }
-.phone-icon{
+
+.phone-icon {
+    margin-top: 20px;
     font-size: 16px;
-    gap: 5px;
     align-items: center;
-    width: 4e0px;
+    width: 40px;
     height: 40px;
+    gap:10px;
+    
 }
-
-
-
-
-
-
-

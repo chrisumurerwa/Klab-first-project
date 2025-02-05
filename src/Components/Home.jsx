@@ -67,7 +67,9 @@ function Home() {
             <button class="shop-now">SHOP-NOW</button>
           </div>
         </main>
+
       </div>
+     
       <div class="categories">
         <h1>popular categories</h1>
       </div>

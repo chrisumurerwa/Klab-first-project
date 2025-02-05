@@ -8,6 +8,8 @@ import Blog from'./Components/Blog'
 import StoreList from './Components/StoreList'
 import Shop1 from './Components/shop'
 import Contact from './Components/contact'
+import HomePage from'./Components/HomePage'
+import Singlepage from'./Components/singlepage'
 function App() {
     return (
       <>
@@ -19,6 +21,9 @@ function App() {
       <Route path='StoreList'element={<StoreList/>}/>
       <Route path='Blog'element={<Blog />} />
       <Route path='Contact'element={<Contact/>}/>
+      <Route path='/View'element={<HomePage/>}/>
+      <Route path='singlecard/:id'element={<Singlepage/>}></Route>
+      
       </Route>
     </Routes>
 
