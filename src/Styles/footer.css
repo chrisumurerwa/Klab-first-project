@@ -1,187 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
- * {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make footer styles more specific */
-footer.footer {
+/* FOOTER STYLING */
+.footer {
   background: #18181b;
   color: white;
   padding: 4rem 6rem;
   width: 100%;
-  margin: 0;
   box-sizing: border-box;
 }
 
-footer.footer .footer-sections {
+.footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
-  width: 100%;
+  gap: 3rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* Left Section with higher specificity */
-footer.footer .footer-section-left {
+/* LEFT SECTION */
+.footer-left {
   flex: 1;
-  max-width: 65%;
+  max-width: 60%;
 }
 
-footer.footer .newsletter {
-  margin-bottom: 3rem;
-}
+.footer-left h2 {
 
-footer.footer .newsletter h3 {
-  font-size: 1.5rem;
+  text-align: left;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-footer.footer .newsletter p {
+.footer-left p {
   color: #9ca3af;
   margin-bottom: 1.5rem;
   max-width: 400px;
 }
 
-footer.footer .subscribe-form {
+.subscribe {
   display: flex;
-  gap: 1rem;
+  gap: 10px;
   max-width: 400px;
 }
 
-footer.footer .subscribe-form input {
+.subscribe input {
   flex: 1;
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   background: transparent;
-  border: none;
-  border-bottom: 1px solid #4b5563;
+  border: 1px solid #4b5563;
   color: white;
   outline: none;
 }
 
-footer.footer .subscribe-form button {
-  padding: 0.5rem 1.5rem;
-  background: transparent;
-  color: white;
+.subscribe button {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #18181b;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-/* Footer Links */
-footer.footer .footer-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-footer.footer .link-section h4 {
+.subscribe button:hover {
+  background: #3b82f6;
   color: white;
-  margin-bottom: 1.5rem;
 }
 
-footer.footer .link-section ul {
+/* FOOTER LINKS */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.column ul {
   list-style: none;
-  padding: 0;
 }
 
-footer.footer .link-section ul li {
-  margin-bottom: 0.75rem;
-}
-
-footer.footer .link-section ul li a {
+.column ul li {
+  margin-bottom: 0.5rem;
   color: #9ca3af;
-  text-decoration: none;
+  cursor: pointer;
   transition: color 0.3s;
 }
 
-footer.footer .link-section ul li a:hover {
+.column ul li:hover {
   color: white;
 }
 
-/* Right Section */
-footer.footer .footer-section-right {
+/* RIGHT SECTION */
+.footer-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-width: 250px;
 }
 
-footer.footer .contact-info h3 {
+.footer-right h2 {
+  margin-right: 5rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-footer.footer .contact-info p {
+.footer-right p {
   color: #9ca3af;
   margin-bottom: 0.5rem;
 }
 
-footer.footer .contact-info .email {
-  color: #3b82f6;
-  margin-bottom: 1.5rem;
-}
-
-footer.footer .social-icons {
+.social-icons {
   display: flex;
-  gap: 1.5rem;
-  font-size: 1.25rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
-footer.footer .social-icons svg {
+.social-icons svg {
   cursor: pointer;
   transition: color 0.3s;
 }
 
-footer.footer .social-icons svg:hover {
+.social-icons svg:hover {
   color: #3b82f6;
 }
 
-footer.footer .accept-section h4 {
-  color: white;
-  margin-bottom: 1.5rem;
+/* PAYMENT METHODS */
+.payments {
+  margin-top: 2rem;
 }
 
-footer.footer .payment-methods img {
+.payments h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.payments img {
   max-width: 200px;
 }
 
-/* Override any potential conflicting styles */
-footer.footer * {
-  box-sizing: border-box;
-}
-
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
-  footer.footer .footer-sections {
+  .footer-container {
     flex-direction: column;
+    align-items: center;
   }
 
-  footer.footer .footer-section-left {
+  .footer-left, .footer-right {
     max-width: 100%;
+    text-align: center;
   }
 
-  footer.footer .footer-section-right {
-    width: 100%;
+  .subscribe {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  footer.footer {
-    padding: 2rem;
+  .footer {
+    padding: 3rem 2rem;
   }
 
-  footer.footer .footer-links {
-    grid-template-columns: repeat(2, 1fr);
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
-  footer.footer .footer-links {
-    grid-template-columns: 1fr;
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-left h2, .footer-right h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-links {
+    display: block;
+  }
+
+  .column h3 {
+    font-size: 1rem;
+  }
+
+  .column ul li {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .payments img {
+    width: 100%;
   }
 }
-
-/* General Footer Styling */

@@ -3,7 +3,7 @@ import "../Styles/NewArrival.css"; // Import the CSS file
 import {Link} from "react-router-dom"
 const ShopCard1 = () => {
   // Product data array
-  const products = [
+ const products = [
     {
       id: 1,
       image: "https://demo.athemes.com/botiga-multi-vendor-el/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/sites/145/2022/12/product-water-bottle-420x420.jpg.webp", // Replace with actual image

@@ -1,8 +1,6 @@
 import React from "react";
-
 import { FaStar } from "react-icons/fa";
 import { IoMdStar } from "react-icons/io";
-
 import "../Styles/home.css";
 import Image1 from "../assets/prod image1.jpg.webp";
 import Image2 from "../assets/prod image2.jpg.webp";
@@ -30,238 +28,210 @@ import Image23 from "../assets/image23.jpg.webp";
 import Image24 from "../assets/image24.jpg.webp";
 
 function Home() {
+  const categories = [
+    { name: 'Electronics', link: '#' },
+    { name: 'Computer Gadget', link: '#' },
+    { name: 'Fashion', link: '#' },
+    { name: 'Body Lotion', link: '#' },
+    { name: 'Sports', link: '#' },
+    { name: 'Woman Clothes', link: '#' },
+    { name: 'Shoes', link: '#' },
+    { name: 'Watches', link: '#' }
+  ];
+
+  const popularImages = [
+    { src: Image1, alt: "prod image1" },
+    { src: Image2, alt: "prod image2" },
+    { src: Image3, alt: "prod image-3" },
+    { src: Image4, alt: "prod image4" },
+    { src: Image5, alt: "prod image5" },
+    { src: Image6, alt: "prod image6" }
+    
+  ];
+
+  const newArrivalProducts = [
+    { 
+      image: Image7,
+      title: "All in one Button",
+      price: "$22.00 – $55.00",
+      rating: 5
+    },
+    {
+      image: Image8,
+      title: "Amazon alexa",
+      price: "$49.00 – $69.00",
+      rating: 5
+    },
+    {
+      image: Image9,
+      title: "Headset Gamer Legion",
+      price: "$44.00",
+      rating: 5
+    }
+  ];
+
+  const vendorList = [
+    {
+      image: Image10,
+      name: "santa monica's store",
+      location: ""
+    },
+    {
+      image: Image11,
+      name: "Josh Doe's Store",
+      location: "New york,Ny"
+    },
+    {
+      image: Image12,
+      name: "Digital Good's Store",
+      location: "New york,Ny"
+    },
+    {
+      image: Image13,
+      name: "jesca's store",
+      location: "New york,Ny"
+    },
+    {
+      image: Image14,
+      name: "The Glass Store",
+      location: "New york,Ny"
+    },
+    {
+      image: Image15,
+      name: "John Doe's Store",
+      location: "New york,Ny"
+    }
+  ];
+
+  const galleryImages = [Image16, Image17, Image18];
+  const instagramImages = [Image19, Image20, Image21, Image22, Image23, Image24];
+
+  const renderStars = (count) => {
+    return [...Array(count)].map((_, index) => (
+      <FaStar key={index} />
+    ));
+  };
+
   return (
     <>
-      <div className="container">
-        <nav class="sidebar">
-          <ul class="nav-list">
-            <li>
-              <a href="#Electronics">Electronics</a>
-            </li>
-            <li>
-              <a href="#Computer">Computer Gadgets</a>
-            </li>
-            <li>
-              <a href="#Fashion">Fashion</a>
-            </li>
-            <li>
-              <a href="#lotion">Body lotion</a>
-            </li>
-            <li>
-              <a href="#Sports">Sports</a>
-            </li>
-            <li>
-              <a href="# Women ">Women clothes</a>
-            </li>
-            <li>
-              <a href="#shoes">shoes</a>
-            </li>
-            <li>
-              <a href="#Watches">Watches</a>
-            </li>
-          </ul>
-        </nav>
-        <main class="banner">
-          <div class="banner-content">
-            <h1>Explore our last and greatest Electronics</h1>
-            <button class="shop-now">SHOP-NOW</button>
-          </div>
-        </main>
+      <div className="w-full max-w-xs p-4">
+        <div className="space-y-3">
+          {categories.map((category, index) => (
+            <a
+              key={index}
+              href={category.link}
+              className={`block text-gray-700 hover:text-gray-900 transition-colors ${
+                index === 0 ? 'text-gray-900 font-medium' : ''
+              }`}
+            >
+              {category.name}
+            </a>
+          ))}
+        </div>
 
+        <div className="mt-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            Explore our latest and greatest electronics
+          </h1>
+          <button className="bg-gray-600 text-white px-6 py-2 rounded hover:bg-gray-700 transition-colors">
+            SHOP NOW
+          </button>
+        </div>
       </div>
-     
-      <div class="categories">
+
+      <div className="categories">
         <h1>popular categories</h1>
       </div>
-      <div class="Image-first">
-        <div>
-          <img src={Image1} alt="prod image1"></img>
-        </div>
-        <div>
-          <img src={Image2} alt="prod image2"></img>
-        </div>
-        <div>
-          <img src={Image3} alt="prod image-3"></img>
-        </div>
-        <div>
-          <img src={Image4} alt="prod image4"></img>
-        </div>
-        <div>
-          <img src={Image5} alt="prod image5"></img>
-        </div>
-        <div>
-          <img src={Image6} alt="prod image6"></img>
-        </div>
-      </div>
-      <div class="container1">
-        <h1>New arrival products </h1>
+      
+      <div className="Image-first">
+        {popularImages.map((image, index) => (
+          <div key={index}>
+            <img src={image.src} alt={image.alt} />
+          </div>
+        ))}
       </div>
 
-      <div class="Image-second">
-
-        <div class="description"> 
-          <img src={Image7} alt="New1" style={{ width: "400px" }}></img>
-
-          <div class="paragraphy">All in one Button</div>
-          <div class="dollars">$22.00 – $55.00</div>
-          <div class="star">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-        </div>
-        <div class="description">
-          <img src={Image8} alt="New2" style={{ width: "400px" }}></img>
-          <div class="paragraphy2">Amazon alexa</div>
-          <div class="dollars">$49.00 – $69.00</div>
-          <div class="star">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-        </div>
-        <div class="description">
-          <img src={Image9} alt="New3" style={{ width: "400px" }}></img>
-          <div class="paragraphy3">Headset Gamer Legion</div>
-          <div class="dollars">$44.00</div>
-          <div class="star">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-        </div>
-
+      <div className="container1">
+        <h1>New arrival products</h1>
       </div>
-      <button class="shop-now1">SHOP-NOW</button>
-      <div class="container">
+
+      <div className="Image-second">
+        {newArrivalProducts.map((product, index) => (
+          <div className="description" key={index}>
+            <img src={product.image} alt={`New${index + 1}`} style={{ width: "400px" }} />
+            <div className="paragraphy">{product.title}</div>
+            <div className="dollars">{product.price}</div>
+            <div className="star">
+              {renderStars(product.rating)}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button className="shop-now1">SHOP-NOW</button>
+
+      <div className="container">
         <h2>Our Vendor List</h2>
       </div>
-      <div class="Image-third">
-        <div className="one">
-          <img src={Image10} alt="image10.jpg.webp"></img>
-          <p class="santa">
-            santa <br />
-            monica's
-            <br /> store
-          </p>
-          <br />
-        </div>
 
-        <div className="one">
-          <img src={Image11} alt="image11.jpg.webp"></img>
-          <p class="josh">
-            Josh <br />
-            Doe's
-            <br /> Store
-          </p>
-
-          <p class="new 1">New york,Ny</p>
-        </div>
-
-        <div className="one">
-          <img src={Image12} alt="image12.jpg.webp"></img>
-          <p className="digital">
-            Digital Good's <br />
-            Store
-          </p>
-          <p class="new 2 ">New york,Ny</p>
-        </div>
+      <div className="Image-third">
+        {vendorList.slice(0, 3).map((vendor, index) => (
+          <div className="one" key={index}>
+            <img src={vendor.image} alt={`vendor-${index + 1}`} />
+            <p className={index === 0 ? "santa" : index === 1 ? "josh" : "digital"}>
+              {vendor.name}
+            </p>
+            {vendor.location && <p className={`new ${index}`}>{vendor.location}</p>}
+          </div>
+        ))}
       </div>
 
-      <div class="Image-fourth">
-        <div className="one">
-          <img src={Image13} alt="image13.jpg.webp"></img>
-          <p class="santa"> jesca's store</p>
-          <br />
-          <p class="new 0 ">New york,Ny</p>
-        </div>
-        <div className="one">
-          <img src={Image14} alt="image14.jpg.webp"></img>
-          <p class="josh">
-            The Glass <br />
-            Store
-          </p>
-
-          <p class="new 1">New york,Ny</p>
-        </div>
-
-        <div className="one">
-          <img src={Image15} alt="image15.jpg.webp"></img>
-          <p className="digital">
-            John Doe's <br />
-            Store
-          </p>
-          <p class="new 2 ">New york,Ny</p>
-        </div>
+      <div className="Image-fourth">
+        {vendorList.slice(3, 6).map((vendor, index) => (
+          <div className="one" key={index}>
+            <img src={vendor.image} alt={`vendor-${index + 4}`} />
+            <p className={index === 0 ? "santa" : index === 1 ? "josh" : "digital"}>
+              {vendor.name}
+            </p>
+            <p className={`new ${index}`}>{vendor.location}</p>
+          </div>
+        ))}
       </div>
-      <div class="container2">
+
+      <div className="container2">
         <h1>Explore our products</h1>
       </div>
 
-      <div class="image-fifth">
-        <div class="description">
-          <img src={Image7} alt="New1"></img>
-          <div class="paragraph">All in one Button</div>
-          <div class="price">$22.00 – $55.00</div>
-          <div class="stars">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
+      <div className="image-fifth">
+        {newArrivalProducts.map((product, index) => (
+          <div className="description" key={index}>
+            <img src={product.image} alt={`New${index + 1}`} />
+            <div className="paragraph">{product.title}</div>
+            <div className="price">{product.price}</div>
+            <div className="stars">
+              {renderStars(product.rating)}
+            </div>
           </div>
-        </div>
-        <div class="description">
-          <img src={Image8} alt="New2"></img>
-          <div class="paragraph">Amazon Alexa</div>
-          <div class="price">$49.00 – $69.00</div>
-          <div class="stars">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-        </div>
-        <div class="description">
-          <img src={Image9} alt="New3"></img>
-          <div class="paragraph">Headset Gamer Legion</div>
-          <div class="price">$44.00</div>
-          <div class="stars">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
-        </div>
+        ))}
       </div>
 
-      <div class="photoes">
-        <img src={Image16} alt="image16"></img>
-        <img src={Image17} alt="image17"></img>
-        <img src={Image18} alt="image18"></img>
+      <div className="photoes">
+        {galleryImages.map((image, index) => (
+          <img key={index} src={image} alt={`image${index + 16}`} />
+        ))}
       </div>
 
-      <div class="container3">
+      <div className="container3">
         <h1>Follow us on Instagram</h1>
       </div>
 
-      <div class="image-sixth">
-        <img src={Image19} alt="image19"></img>
-        <img src={Image20} alt="image20"></img>
-        <img src={Image21} alt="image21"></img>
-        <img src={Image22} alt="image22"></img>
-        <img src={Image23} alt="image23"></img>
-        <img src={Image24} alt="image24"></img>
+      <div className="image-sixth">
+        {instagramImages.map((image, index) => (
+          <img key={index} src={image} alt={`image${index + 19}`} />
+        ))}
       </div>
     </>
   );
 }
+
 export default Home;

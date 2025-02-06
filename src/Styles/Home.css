@@ -1,240 +1,161 @@
-.products{
-    margin-left: 10px;
-    height: auto;
-}
-*
-* {
+/* GENERAL STYLES */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200x;
-    margin:10rem;
-    padding: 20px;
+  }
+  
+  .categories h1,
+  .container1 h1,
+  .container2 h1,
+  .container3 h1 {
     text-align: left;
-    margin-top:3rem ;
-    margin-left: 5rem;
-
-}
-
-.sidebar  ul {
-    width: 250px;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.nav-list li {
-    margin-bottom: 15px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    display: block;
-    padding: 5px 0;
-}
-
-.banner {
-    flex-grow: 1;
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  
+  h1, h2 {
+    font-size: 2rem;
     text-align: center;
-}
-
-.banner-content {
-    max-width: 500px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 28px;
+  }
+  
+  /* GRID LAYOUTS */
+  .Image-first, 
+  .Image-second, 
+  .Image-third, 
+  .Image-fourth, 
+  .image-fifth, 
+  .photoes, 
+  .image-sixth {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .Image-first img, 
+  .Image-second img, 
+  .Image-third img, 
+  .Image-fourth img, 
+  .image-fifth img, 
+  .photoes img, 
+  .image-sixth img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* DESCRIPTION TEXT */
+  .description {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .paragraphy, .paragraphy2, .paragraphy3 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .dollars {
+    color: #666;
+    margin: 10px 0;
     font-weight: bold;
-}
-
-.shop-now {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #5d677a;
+  }
+  
+  .star {
+    color: gold;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  /* BUTTON STYLING */
+  .shop-now1 {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #333;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.shop-now:hover {
-    background-color: #4a5668;
-}
-
-
-
-
-@media (max-width:768px) {
-    .container{
-        flex-direction: column;
-    }
-    .sidebar{
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-    .banner{
-        padding: 20px;
-    }
-}
-.banner-content h1{
-    font-size: 32px;
-}
-.categories{
-    display: flex;
-}
-.Image-first{
-    width: auto;
-    max-width:15%;
-    height: auto;
-    display: flex;
-
-}
-.container1{
-    display: flex;
-    text-align: left;
-}
-.Image-second{
-    display: flex;
-   flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    
-
-}
-
-.paragraph{
-
-}
-.price{
-    margin-top: 5px;
-}
-
-    .stars {
-    color: chocolate;
-}
-.shop-now1{
+    transition: 0.3s;
+  }
+  
+  .shop-now1:hover {
+    background-color: #555;
+  }
+  
+  /* FLEXIBLE IMAGES */
+  .one {
     text-align: center;
-    margin-top: 10px;
-    background-color:#6B7280;
-    color: white;
-    border: none;
-    padding: 14px 24px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    letter-spacing: 1px;
-} 
-
-.list{
-    display: flex;
-    text-align: left;
-    
-}
-.Image-third{
-    display: flex;
-    gap: 20px;
-}
-.one{
-    display:block;
-}
-.one img{
-    width: 400px;
-}
-.santa{
-    text-align: left;
-    font-weight: bold;
-    height: 20px;
-    font-size: 20px;
-}
-.new {
-text-align: left;
-}
-
-.josh{
-    font-weight: bold;
-    font-size: 20px;
-}
-.digital{
-    font-weight: bold;
-    font-size:20px;
-}
-.new {
-    text-align: left;
-}
-.new {
-    text-align:left;
-}
-.container2, .container3 {
-    text-align: left;
-}
-
-.image-fifth, .photoes, .image-sixth {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.description img{
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.description {
-    /* text-align: center; */
-    /* font-weight: bold; */
-}
-
-.paragraph, .price, .stars {
-    margin-top: 5px;
-}
-
-.image-fifth img {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-.photoes img{
-width: auto;
-display: flex;
-max-width:30%;
-height: auto;
-
-
-}
-
-.image-sixth img  {
-    width: auto;
-    max-width:15%;
-    height: auto;
-    display: flex;
-}
-.Image-fourth{
-    display: flex;
-    flex-direction: row;
+  }
+  
+  .one img {
     width: 100%;
-    /* gap: 20px; */
-    justify-content: space-between;
-}
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .santa, .josh, .digital {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .new {
+    color: #666;
+  }
+  
+  /* 🔹 RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    h1, h2 {
+      font-size: 1.8rem;
+    }
+    
+    .Image-first, .Image-second, .Image-third, .Image-fourth, .image-fifth, .photoes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .image-sixth {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1, h2 {
+      font-size: 1.6rem;
+    }
+    
+    .Image-first, .Image-second, .Image-third, .Image-fourth, .image-fifth, .photoes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .image-sixth {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .shop-now1 {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2 {
+      font-size: 1.4rem;
+    }
+  
+    .Image-first, .Image-second, .Image-third, .Image-fourth, .image-fifth, .photoes, .image-sixth {
+      grid-template-columns: 1fr;
+    }
+  
+    .shop-now1 {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+  

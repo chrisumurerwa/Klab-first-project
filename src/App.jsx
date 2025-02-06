@@ -10,6 +10,7 @@ import Shop1 from './Components/shop'
 import Contact from './Components/contact'
 import HomePage from'./Components/HomePage'
 import Singlepage from'./Components/singlepage'
+import Singleblog from './Components/Singleblog'
 function App() {
     return (
       <>
@@ -17,12 +18,12 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout/>}> 
       <Route path='/' index element={<Home/>}/>
-      <Route path='Shop'element={<Shop1/>}/>
-      <Route path='StoreList'element={<StoreList/>}/>
-      <Route path='Blog'element={<Blog />} />
-      <Route path='Contact'element={<Contact/>}/>
-      <Route path='/View'element={<HomePage/>}/>
-      <Route path='singlecard/:id'element={<Singlepage/>}></Route>
+      <Route path='/Shop'element={<Shop1/>}/>
+      <Route path='/StoreList'element={<StoreList/>}/>
+      <Route path='/Blog'element={<Blog />} />
+      <Route path='/Contact'element={<Contact/>}/>
+      {/* <Route path='/View'element={<HomePage/>}/> */}
+      <Route path='/singleblog/:id'element={<Singleblog/>}></Route>
       
       </Route>
     </Routes>

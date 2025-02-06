@@ -1,81 +1,134 @@
+/* CONTACT CONTAINER */
 .contact-container {
-    display: flex;
-    /* justify-content: center; */
-    max-width: 1000px;
-    margin: auto;
-    font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* FLEXIBLE CONTACT CONTENT */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* CONTACT FORM & STORE INFO */
+.contact-form, .store-info {
+  width: 48%;
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* FORM LABELS */
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* REQUIRED FIELD INDICATOR */
+span {
+  color: red;
+}
+
+/* NAME INPUT FIELDS */
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+/* INPUT & TEXTAREA STYLES */
+.name-fields input,
+input, 
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* TEXTAREA HEIGHT */
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+button {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* STORE INFO PARAGRAPH */
+.store-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .contact-container {
+      padding: 15px;
   }
   
   .contact-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+      flex-direction: column;
   }
-  
+
   .contact-form, .store-info {
-    width: 50%;
+      width: 100%;
   }
-  
-  h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 10px;
   }
-  
-  form label {
-    display: block;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  span {
-    color: red;
-  }
-  
+
   .name-fields {
-    display: flex;
-    gap: 15px;
+      flex-direction: column;
+      gap: 10px;
   }
-  
-  .name-fields input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  textarea {
-    height: 120px;
-    /* resize: none; */
-  }
-  
+
   button {
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+      width: 100%;
   }
-  
-  button:hover {
-    background-color: #333;
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 22px;
   }
-  
+
+  form label {
+      font-size: 13px;
+  }
+
   .store-info p {
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 0;
+      font-size: 13px;
   }
-  
+}

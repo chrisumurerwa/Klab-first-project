@@ -1,3 +1,10 @@
 .nav-container{
   display: flex;
 }
+
+.descript{
+  visibility: hidden;
+}
+.price{
+  visibility: hidden;
+}
