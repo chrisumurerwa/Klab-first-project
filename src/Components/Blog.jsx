@@ -42,7 +42,6 @@ content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum por
 
 },
 
-
 ];  
 const Blog = () => {
     const blogt =useNavigate();
@@ -56,12 +55,14 @@ const Blog = () => {
       {blogPosts.map((post) => (
         <div key={post.id} className="blog-card">
           <img src={post.image} alt={post.title} />
+          
           <div className="blog-content">
             <h2>{post.title}</h2>
             <p>{post.content}</p>
           <button onClick={()=>handleBlogt(post.id)} className="read-more">Read more</button>
           </div>
         </div>
+        
       ))}
     </div>
     </div>

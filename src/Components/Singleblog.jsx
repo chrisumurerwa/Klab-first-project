@@ -15,6 +15,7 @@ function  Singleblog() {
       <div class="content">{singlecard.content}</div>
       
     </div>
+     
 
   )
 }

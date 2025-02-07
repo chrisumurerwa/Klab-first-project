@@ -115,28 +115,31 @@ function Home() {
   return (
     <>
       <div className="w-full max-w-xs p-4">
-        <div className="space-y-3">
-          {categories.map((category, index) => (
-            <a
-              key={index}
-              href={category.link}
-              className={`block text-gray-700 hover:text-gray-900 transition-colors ${
-                index === 0 ? 'text-gray-900 font-medium' : ''
-              }`}
-            >
-              {category.name}
-            </a>
-          ))}
-        </div>
+      
+      {/* Sidebar Navigation */}
+      <nav className="sidebar">
+        <ul className="nav-list">
+          <li><a href="#Electronics">Electronics</a></li>
+          <li><a href="#Computer">Computer Gadgets</a></li>
+          <li><a href="#Fashion">Fashion</a></li>
+          <li><a href="#lotion">Body Lotion</a></li>
+          <li><a href="#Sports">Sports</a></li>
+          <li><a href="#Women">Women Clothes</a></li>
+          <li><a href="#shoes">Shoes</a></li>
+          <li><a href="#Watches">Watches</a></li>
+        </ul>
+      </nav>
 
-        <div className="mt-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            Explore our latest and greatest electronics
-          </h1>
-          <button className="bg-gray-600 text-white px-6 py-2 rounded hover:bg-gray-700 transition-colors">
-            SHOP NOW
-          </button>
+      {/* Banner Section */}
+      <main className="banner">
+        <div className="banner-content">
+          <h1>Explore Our Latest and Greatest Electronics</h1>
+          <button className="shop-now0">SHOP NOW</button>
         </div>
+      </main>
+    
+
+        
       </div>
 
       <div className="categories">

@@ -29,6 +29,9 @@ function Footer() {
                 <li>Fashion</li>
                 <li>General</li>
                 <li>Shoes</li>
+                <li>Sports</li>
+                <li>Watch</li>
+                <li>Woman clothes</li>
                 
               </ul>
             </div>
