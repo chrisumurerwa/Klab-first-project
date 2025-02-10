@@ -28,13 +28,15 @@
   }
   
   .thumbnail {
-    width: 70px;
+    width: 71px;
     height: 70px;
     cursor: pointer;
     border: 2px solid transparent;
     transition: border 0.3s ease;
+
   }
   
+
   .thumbnail.active {
     border: 2px solid black;
   }
