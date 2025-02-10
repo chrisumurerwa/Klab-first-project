@@ -1,7 +1,11 @@
 import React from "react";
 import "../Styles/NewArrival.css"; // Import the CSS file
 import {Link} from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
+
 const ShopCard1 = () => {
+  const navigate= useNavigate();
+
   // Product data array
  const products = [
     {
@@ -51,8 +55,8 @@ const ShopCard1 = () => {
       <div className="product-card" key={product.id}>   
         <div className="image-container">
           <img src={product.image} alt={product.name} />
-          <div className="overlay select">Select Options</div>
-          <div className="overlay quick-view">Quick View</div>
+          <div    onClick={() => navigate("/single-shop")}className="overlay select">Select Options</div>
+          <button onClick={() => navigate("/single-shop")} className="overlay quick-view">Quick View</button>
         </div>
         <div><h3>{product.name}</h3></div>
         <div><p>{product.price}</p></div>

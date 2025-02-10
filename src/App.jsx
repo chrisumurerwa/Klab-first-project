@@ -11,14 +11,16 @@ import Contact from './Components/contact'
 import HomePage from'./Components/HomePage'
 import Singlepage from'./Components/singlepage'
 import Singleblog from './Components/Singleblog'
+import SingleShop from './Components/SingleShop'
 function App() {
     return (
-      <>
+      <>  
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Layout/>}> 
       <Route path='/' index element={<Home/>}/>
       <Route path='/Shop'element={<Shop1/>}/>
+      <Route path='/single-Shop'element={<SingleShop/>}/>
       <Route path='/StoreList'element={<StoreList/>}/>
       <Route path='/Blog'element={<Blog />} />
       <Route path='/Contact'element={<Contact/>}/>

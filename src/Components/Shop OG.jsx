@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/Shop.css'
-import Image from '../assets/image25.webp'; // Correct import
+import Image from '../assets/image25.webp';
+
 const Shop = ()=>{
   const products=[
     {
@@ -134,7 +135,7 @@ return (
                 <img src={product.image} alt={product.name} />
                 <div className="overlay">
                   <button>Select Options</button>
-                  <button>Quick View</button>
+                  <button onClick={() => navigate("/single-shop")}>Quick View</button>
                 </div>
               </div>
               <h3>{product.name}</h3>

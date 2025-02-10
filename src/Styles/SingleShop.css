@@ -1,0 +1,168 @@
+/* General container styling */
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+  
+  /* Product details section */
+  .product-details {
+    flex: 2;
+    align-items: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail-container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid black;
+  }
+  
+  /* Product title & rating */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .rating {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+
+  }
+  
+  .rating span {
+    font-size: 14px;
+    color: gray;
+    text-align: right;
+  }
+  
+  /* Pricing */
+  h2 {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Description */
+  p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+ 
+  }
+  
+  /* Color options */
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  /* Quantity control */
+  .quantity-control {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 120px;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .quantity-control button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+   
+  }
+  
+  /* Vendor section */
+  .vendor-info {
+    margin-top: 4rem;
+    margin-top: 5rem;
+    flex: 1;
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align:left;
+   size: 50%;
+  }
+  .vendor-info h2{
+    text-align: left;
+    margin-top: 4rem;
+    margin-top: 1rem;
+  }
+  .vendor-info img {
+    font-size:70px  ;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+  }
+  
+  .vendor-info h3 {
+    margin-top: 2rem;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .vendor-info p {
+    margin-top: 2rem;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .see-products {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .register-text {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .register-text a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
